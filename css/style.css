@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Thanh điều hướng */
+.nav-bar {
+    background-color: #333;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.nav-items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Định dạng cho các mục trong thanh điều hướng */
+.nav-items li {
+    margin: 0;
+}
+
+.nav-items li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    display: block;
+    text-align: center;
+}
+
+/* Nền và hiệu ứng cho từng danh mục */
+.nav-electronics a {
+    background-color: #3498db;
+}
+
+.nav-fashion a {
+    background-color: #e74c3c;
+}
+
+.nav-cosmetics a {
+    background-color: #9b59b6;
+}
+
+.nav-cart a {
+    background-color: #f39c12;
+}
+
+.nav-auth a {
+    background-color: #2ecc71;
+}
+
+/* Hiệu ứng hover */
+.nav-items li a:hover {
+    opacity: 0.8;
+}
+
+/* Phần còn lại của style */
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#featured-products {
+    margin: 20px 0;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-item {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.product-item h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.product-price {
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 10px 0;
+    color: white;
+    background: #3498db;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.btn-add {
+    background: #2ecc71;
+}
+
+.btn:hover {
+    background: #2980b9;
+}
+
+.btn-add:hover {
+    background: #27ae60;
+}
